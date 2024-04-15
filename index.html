@@ -4,31 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles.css">
     <title>Atividade 4</title>
 </head>
 
 <body>
     <header id="main_header">
-        <img src="./src/logo.bmp" alt="logo" id="logo">
+        <div class="logo_container">
+            <a href="./">
+                <h1 id="logo">Logo</h1>
+            </a>
+        </div>
     </header>
-    <main class="hero">
+    <main class="hero w80">
         <section class="intro">
-            <div class="intro_text"></div>
-            <div class="intro_img"></div>
+            <div class="intro_text">
+                <div class="text_box">
+                    <h2 style="text-align: start;">Sinta o conforto acolhedor de nossas hospedagens</h2>
+                    <p>Hospede-se nos nossos hotéis com quartos a partir de R$ 100,00</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit voluptates labore totam ut
+                        error possimus molestiae quod optio, tenetur pariatur nulla, dignissimos quia deleniti! Dolor
+                    </p>
+                </div>
+                <button class="CTA btn more_info">SAIBA MAIS</button>
+            </div>
+            <div class="intro_img">
+                <img src="./src/imgs/hotel.jpg" alt="Front hotel">
+            </div>
         </section>
         <section class="diferentials">
             <h3>Por que se hospedar em nossos hotéis?</h3>
             <div class="reasons">
                 <div class="reason">
-                    <i></i>
+                    <i class="fa-solid fa-mug-saucer"></i>
                     <div class="reason_text">
                         <h4>Delicioso café da manhã</h4>
                         <p>Incluso em todas as diarias</p>
                     </div>
                 </div>
                 <div class="reason">
-                    <i></i>
+                    <i class="fa-solid fa-location-dot"></i>
                     <div class="reason_text">
                         <h4>Facil acesso</h4>
                         <p>Perto dos principais pontos turisticos</p>
@@ -37,18 +55,18 @@
             </div>
         </section>
         <section class="rooms">
-            <h3>Nossos quartos</h3>
+            <h3 style="text-align: center;">Nossos quartos</h3>
             <div class="room_cards">
-                <div class="roomcard">
-                    <img src="" alt="">
+                <div class="room_card">
+                    <img src="./src/imgs/solteiro.jpg" alt="">
                     <p>Suite Solteiro</p>
                 </div>
-                <div class="roomcard">
-                    <img src="" alt="">
+                <div class="room_card">
+                    <img src="./src/imgs/casal.jpg" alt="">
                     <p>Suite Casal</p>
                 </div>
-                <div class="roomcard">
-                    <img src="" alt="">
+                <div class="room_card">
+                    <img src="./src/imgs/master.jpg" alt="">
                     <p>Suite Master</p>
                 </div>
             </div>
@@ -56,40 +74,53 @@
     </main>
     <footer id="main_footer">
         <!-- I have no ideia why I have to do this using the footer... -->
-        <div class="footer_text">
-            <h3>Faça sua reserva</h3>
-            <p>Entre em contato contato conosco informando as datas desejadas. Lhe retornaremos informando a
-                disponibilidade e repassando detalhes da reserva</p>
-        </div>
-        <div class="footer_form_container">
-            <form action="" id="footer_form">
-                <div class="form_block">
-                    <label for="name">Nome:</label>
-                    <input type="text" id="name" placeholder="Nome">
-                </div>
+        <div class="footer_container w80">
+            <div class="footer_text">
+                <h3>Faça sua reserva</h3>
+                <p>Entre em contato contato conosco informando as datas desejadas. Lhe retornaremos informando a
+                    disponibilidade e repassando detalhes da reserva</p>
+            </div>
+            <div class="footer_form_container">
+                <form action="" id="footer_form">
+                    <div class="form_block">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" placeholder="Nome">
+                    </div>
 
-                <div class="form_block">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" placeholder="Email">
-                </div>
+                    <div class="form_block">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
 
-                <div class="form_block">
-                    <label for="phone">Telefone:</label>
-                    <input type="text" id="phone" placeholder="Telefone">
-                </div>
+                    <div class="form_block">
+                        <label for="check-in">Data de entrada:</label>
+                        <input type="text" id="check-in" placeholder="Data de entrada">
+                    </div>
 
-                <div class="form_block">
-                    <label for="check-in">Data de entrada:</label>
-                    <input type="text" id="check-in" placeholder="Data de entrada">
-                </div>
+                    <div class="form_block">
+                        <label for="check-out">Data de saída:</label>
+                        <input type="text" id="check-out" placeholder="Data de saída">
+                    </div>
 
-                <div class="form_block">
-                    <label for="check-out">Data de saída:</label>
-                    <input type="text" id="check-out" placeholder="Data de saída">
-                </div>
-
-                <button type="submit">Enviar</button>
-            </form>
+                    <div class="form_block">
+                        <label for="obsvs">Observações</label>
+                        <textarea name="obsvs" id="obsvs" cols="30" rows="4" style="resize: none;"></textarea>
+                    </div>
+                    <div class="guest_numbers">
+                        <div class="guests">
+                            <div class="form_block">
+                                <label for="adults">Adultos:</label>
+                                <input type="number" id="adults" value="2">
+                            </div>
+                            <div class="form_block">
+                                <label for="children">Crianças:</label>
+                                <input type="number" id="children" value="1">
+                            </div>
+                        </div>
+                        <button type="submit" class="CTA btn">Enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </footer>
 
