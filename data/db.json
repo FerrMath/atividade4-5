@@ -1,0 +1,44 @@
+{
+  "registros": [
+    {
+      "id": 1713227433723,
+      "name": "Fulano",
+      "email": "fulano@hotmail.com",
+      "checkin": "22/04/2024",
+      "checkout": "22/05/2025",
+      "obsvs": "Quarto limpo para fumante",
+      "adults": "3",
+      "children": "0"
+    },
+    {
+      "id": 1713227487253,
+      "name": "Siclano",
+      "email": "siclano@hotmail.com",
+      "checkin": "19/05/2024",
+      "checkout": "22/05/2025",
+      "obsvs": "Teste de entrada de observação",
+      "adults": "2",
+      "children": "1"
+    },
+    {
+      "id": 1713227571444,
+      "name": "Triclano",
+      "email": "triclano@hotmail.com",
+      "checkin": "19/05/2024",
+      "checkout": "22/05/2025",
+      "obsvs": "blablabla",
+      "adults": "2",
+      "children": "1"
+    },
+    {
+      "id": 1713229049532,
+      "name": "Quatrino",
+      "email": "quatrino@email.com",
+      "checkin": "2024-03-17",
+      "checkout": "2025-09-25",
+      "obsvs": "Ultimo teste antes de enviar",
+      "adults": "7",
+      "children": "0"
+    }
+  ]
+}

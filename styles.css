@@ -233,6 +233,34 @@ body {
     margin-bottom: 1rem;
 }
 
+#table {
+    width: 100%;
+    border: 1px solid #ddd;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+tr {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    /* increase the height of the tr */
+    height: 50px;
+}
+
+/* Each td will have a border to their left side except the first td */
+td, th {
+    border-left: 1px solid #ddd;
+    width: fit-content;
+    font-size: 0.7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 1rem;
+}
+
+td:first-child,
+th:first-child {
+    border-left: none;
+}
 
 /* media query if window size is less than 700px */
 @media screen and (max-width: 800px) {

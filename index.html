@@ -81,25 +81,27 @@
                     disponibilidade e repassando detalhes da reserva</p>
             </div>
             <div class="footer_form_container">
-                <form action="" id="footer_form">
+                <form id="footer_form" method="post" name="contact_form">
                     <div class="form_block">
                         <label for="name">Nome:</label>
-                        <input type="text" id="name" placeholder="Nome">
+                        <input type="text" id="name" placeholder="Nome" name="name" pattern="[a-z]{1,25}$" required>
                     </div>
 
                     <div class="form_block">
                         <label for="email">Email:</label>
-                        <input type="email" id="email" placeholder="Email">
+                        <input type="email" id="email" placeholder="Email" name="email" required>
                     </div>
 
                     <div class="form_block">
                         <label for="check-in">Data de entrada:</label>
-                        <input type="text" id="check-in" placeholder="Data de entrada">
+                        <input type="date" id="check-in" placeholder="Data de entrada" required name="checkin"
+                            min="1900-01-01" max="2026-01-01">
                     </div>
 
                     <div class="form_block">
                         <label for="check-out">Data de saída:</label>
-                        <input type="text" id="check-out" placeholder="Data de saída">
+                        <input type="date" id="check-out" placeholder="Data de saída" required name="checkout"
+                            min="1900-01-01" max="2026-01-01">
                     </div>
 
                     <div class="form_block">
@@ -110,19 +112,25 @@
                         <div class="guests">
                             <div class="form_block">
                                 <label for="adults">Adultos:</label>
-                                <input type="number" id="adults" value="2">
+                                <input type="number" id="adults" value="2" name="adults" min="0">
                             </div>
                             <div class="form_block">
                                 <label for="children">Crianças:</label>
-                                <input type="number" id="children" value="1">
+                                <input type="number" id="children" value="1" name="children" min="0">
                             </div>
                         </div>
-                        <button type="submit" class="CTA btn">Enviar</button>
+                        <button type="submit" class="CTA btn" id="submit">Enviar</button>
                     </div>
                 </form>
             </div>
         </div>
+
     </footer>
+    <div style="padding: 1rem;">
+        <a href="./registros.html" style="text-align: center;">
+            <h2>Ver registros</h2>
+        </a>
+    </div>
 
     <script src="./app.js"></script>
 </body>
